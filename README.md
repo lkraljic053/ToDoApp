@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# ToDoApp
+This is a simple To-Do application built using Vite, React, TypeScript, and SCSS. The app allows users to manage tasks by adding, completing, and deleting them. It also integrates with the DummyJSON ToDo API to fetch tasks from an external source.
+## Technologies
+HTML, CSS, TypeScript, vitejs, React - All of the mentioned are the programming languages and technologies that will be used to achieve the implementation of the Web app
+## Features
+1. Add Tasks: Users can add tasks manually using an input field.
+2. API Integration: Fetch tasks from the DummyJSON ToDo API.
+3. Task Management:
+  -Mark tasks as complete or uncomplete
+  -Delete individual task
+  -Delete manualy added tasks
+  -Delete API tasks
+  -Delete all tasks
+  -Delete completed tasks
+## Project structure
+![image](https://github.com/user-attachments/assets/177de226-4da9-436c-9950-d62b277f6544)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Getting Started
+## Prerequisites
+-Node.js
+-npm
+## Instalation
+1. Clone the repository: https://github.com/lkraljic053/ToDoApp.git
+2. Install dependencies:
+  -npm i
+3. Start the development server:
+   -npm run dev
+## Usage
+1. Add a Task: Use the input field and click "Add Task" to create a new task.
+2. Fetch API Tasks: Specify the number of tasks and click "Fetch API Tasks" to add tasks from the DummyJSON API.
+3. Manage Tasks:
+  -Click the checkbox to mark a task as completed or uncompleted.
+  -Click the delete button to remove a task.
+  -Delete Tasks: Use the provided buttons to delete all tasks, only manually added tasks, or only API-fetched tasks.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
