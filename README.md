@@ -13,7 +13,8 @@ HTML, CSS, TypeScript, vitejs, React - All of the mentioned are the programming 
   -Delete all tasks
   -Delete completed tasks
 ## Project structure
-![image](https://github.com/user-attachments/assets/177de226-4da9-436c-9950-d62b277f6544)
+![image](https://github.com/user-attachments/assets/c382f313-b814-4987-aab3-66c5f9b67595)
+
 
 # Getting Started
 ## Prerequisites
